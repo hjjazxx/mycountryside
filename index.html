@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>天等 · 我的家乡 | 广西崇左天等县文旅导览</title>
+<meta name="description" content="广西崇左市天等县文旅主题网站：喀斯特山水、霞客人文、壮族霜降节、立屯精神、指天椒美食与精品线路规划。" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#home">
+    <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".5"/>
+      <path d="M4 30 L13 18 L20 26 L27 12 L36 30 Z" fill="currentColor" opacity=".9"/>
+      <circle cx="29" cy="10" r="3" fill="currentColor" opacity=".55"/>
+    </svg>
+    <span class="brand-txt"><b>天等</b><i>我的家乡 · 广西崇左</i></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="nl active">首页</a>
+    <a href="#spots" class="nl">好玩</a>
+    <a href="#culture" class="nl">人文</a>
+    <a href="#video" class="nl">视频</a>
+    <a href="#food" class="nl">好吃</a>
+    <a href="#route" class="nl">线路</a>
+    <a href="#calendar" class="nl">时节</a>
+    <a href="#guide" class="nl">攻略</a>
+  </nav>
+  <button class="wish-btn" id="wishBtn" title="我的心愿单">
+    ♥ <span class="wish-count" id="wishCount">0</span>
+  </button>
+</header>
+<div class="scroll-progress"><i id="scrollBar"></i></div>
+
+<!-- ============ 首页 Hero ============ -->
+<section class="hero" id="home">
+  <div class="hero-sky">
+    <svg class="hero-art" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0f2d4d"/><stop offset=".45" stop-color="#2b5f86"/>
+          <stop offset=".72" stop-color="#e08a52"/><stop offset="1" stop-color="#f6c98a"/>
+        </linearGradient>
+        <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#123a5c"/><stop offset="1" stop-color="#0d2a44"/></linearGradient>
+        <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d5170"/><stop offset="1" stop-color="#133c58"/></linearGradient>
+        <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#356f82"/><stop offset="1" stop-color="#1d4a5e"/></linearGradient>
+      </defs>
+      <rect width="1440" height="620" fill="url(#sky)"/>
+      <circle cx="1090" cy="330" r="62" fill="#ffd79a" opacity=".95"/>
+      <circle cx="1090" cy="330" r="120" fill="#ffd79a" opacity=".12"/>
+      <g fill="#ffffff" opacity=".12">
+        <ellipse cx="300" cy="180" rx="150" ry="18"/><ellipse cx="360" cy="205" rx="110" ry="14"/>
+        <ellipse cx="900" cy="140" rx="180" ry="16"/>
+      </g>
+      <!-- 远山 -->
+      <g class="layer" data-speed="0.06">
+        <path fill="url(#m3)" d="M0 400 L90 300 L150 350 L240 250 L330 340 L420 285 L520 360 L610 300 L700 355 L800 290 L900 345 L1010 280 L1120 350 L1230 300 L1330 355 L1440 305 L1440 620 L0 620 Z"/>
+      </g>
+      <!-- 中山 -->
+      <g class="layer" data-speed="0.12">
+        <path fill="url(#m2)" d="M0 470 L110 385 L190 440 L280 340 L360 430 L470 360 L560 445 L660 375 L770 450 L880 380 L990 455 L1100 390 L1210 460 L1330 395 L1440 455 L1440 620 L0 620 Z"/>
+      </g>
+      <!-- 近山（喀斯特圆峰） -->
+      <g class="layer" data-speed="0.2">
+        <path fill="url(#m1)" d="M0 620 L0 500 C40 470 70 470 100 500 C130 455 170 455 200 500 C235 450 275 450 305 500 C345 480 380 490 410 520 C450 465 495 465 530 515 C570 490 605 495 640 525 C690 470 740 470 785 520 C825 495 860 500 895 530 C945 480 995 480 1040 530 C1080 505 1115 510 1150 540 C1200 490 1250 490 1295 540 C1335 515 1370 520 1405 550 L1440 530 L1440 620 Z"/>
+      </g>
+      <!-- 田园前景 -->
+      <g class="layer" data-speed="0.3">
+        <path fill="#0a2135" d="M0 620 L0 560 C200 540 400 570 620 552 C820 536 1040 566 1240 548 C1340 540 1400 552 1440 546 L1440 620 Z"/>
+        <g stroke="#123c4f" stroke-width="2" opacity=".5">
+          <path d="M0 585 C300 570 700 596 1440 572"/><path d="M0 602 C300 588 700 612 1440 590"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <p class="hero-kicker">广西 · 崇左 · 桂西南大石山区 · 骆越故地</p>
+    <h1 class="hero-title"><span>“天”生山水</span><span>“等”你来读</span></h1>
+    <p class="hero-sub">
+      这里有徐霞客游历 31 天、写下近两万字游记的喀斯特秘境，有万人空巷的壮族霜降节，
+      有用 24 年凿穿大山的立屯精神，还有让整座城都上头的天等指天椒。
+    </p>
+    <div class="hero-cta">
+      <a href="#spots" class="btn btn-primary">开始探索 →</a>
+      <a href="#route" class="btn btn-ghost">帮我规划行程</a>
+    </div>
+    <div class="hero-facts" id="heroFacts"></div>
+  </div>
+  <div class="hero-scroll">向下滚动<i></i></div>
+</section>
+
+<main class="wrap">
+
+  <!-- ============ 分类导航 ============ -->
+  <section class="section" id="cats">
+    <div class="sec-head">
+      <span class="sec-tag">01 / 文旅项目分类</span>
+      <h2>四种打开天等的方式</h2>
+      <p>山水、人文、精神、野趣——按你今天的心情挑一个入口。</p>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </section>
+
+  <!-- ============ 好玩：景点 ============ -->
+  <section class="section" id="spots">
+    <div class="sec-head">
+      <span class="sec-tag">02 / 好玩</span>
+      <h2>天等值得去的地方</h2>
+      <p>共 <b id="spotTotal">18</b> 处景点与体验点，点击卡片查看详情与实用贴士。</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" id="filters"></div>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm5 12 4 4"/></svg>
+        <input id="searchInput" type="search" placeholder="搜索景点、乡镇或关键词…" />
+      </div>
+    </div>
+    <p class="result-hint" id="resultHint"></p>
+    <div class="spot-grid" id="spotGrid"></div>
+  </section>
+
+  <!-- ============ 人文：文化名片 ============ -->
+  <section class="section alt" id="culture">
+    <div class="sec-head">
+      <span class="sec-tag">03 / 人文</span>
+      <h2>五张文化名片</h2>
+      <p>让天等不只是风景的，是这五样东西。</p>
+    </div>
+    <div class="culture-list" id="cultureList"></div>
+  </section>
+
+  <!-- ============ 宣传视频 ============ -->
+  <section class="section alt" id="video">
+    <div class="sec-head">
+      <span class="sec-tag">04 / 宣传视频</span>
+      <h2>先看视频，再出发</h2>
+      <p>四部天等文旅宣传短片：全县形象片、剑龙山风光与指天椒专题，点开即可观看。</p>
+    </div>
+
+    <div class="video-grid">
+      <figure class="video-card">
+        <div class="video-box">
+          <video controls playsinline preload="metadata" src="assets/video/tiandeng.mp4"></video>
+        </div>
+        <figcaption class="video-info">
+          <span class="v-tag v-tag-main">全县形象片</span>
+          <h3>天等县文旅宣传片</h3>
+          <p class="v-desc">《“天”生山水　“等”你来读》——喀斯特山水、壮族霜降节、立屯精神与指天椒之乡，一分钟看懂天等。</p>
+          <span class="v-meta">时长 1:45</span>
+        </figcaption>
+      </figure>
+
+      <figure class="video-card">
+        <div class="video-box">
+          <video controls playsinline preload="metadata" src="assets/video/jianlongshan-1.mp4"></video>
+        </div>
+        <figcaption class="video-info">
+          <span class="v-tag">景区宣传片</span>
+          <h3>剑龙山 · 宣传片</h3>
+          <p class="v-desc">宁干乡剑龙山完整宣传片，剑状石峰、云海与登山栈道，看“广西小张家界”的全貌。</p>
+          <span class="v-meta">时长 1:50</span>
+        </figcaption>
+      </figure>
+
+      <figure class="video-card">
+        <div class="video-box">
+          <video controls playsinline preload="metadata" src="assets/video/jianlongshan-2.mp4"></video>
+        </div>
+        <figcaption class="video-info">
+          <span class="v-tag">风光短片</span>
+          <h3>剑龙山 · 风光速览</h3>
+          <p class="v-desc">剑龙山精华片段剪辑，适合先看一眼再决定要不要排进行程。</p>
+          <span class="v-meta">时长 0:49</span>
+        </figcaption>
+      </figure>
+
+      <figure class="video-card">
+        <div class="video-box">
+          <video controls playsinline preload="metadata" src="assets/video/zhitianjiao.mp4"></video>
+        </div>
+        <figcaption class="video-info">
+          <span class="v-tag">物产专题</span>
+          <h3>天等指天椒宣传片</h3>
+          <p class="v-desc">从种植、加工到指天椒酱，讲清“中国指天椒之乡”这颗小辣椒的产业链。</p>
+          <span class="v-meta">时长 1:32</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="video-note">
+      视频由本人提供，用于家乡文旅展示；如用于商业用途请联系版权方。
+    </p>
+  </section>
+
+  <!-- ============ 好吃 ============ -->
+  <section class="section" id="food">
+    <div class="sec-head">
+      <span class="sec-tag">05 / 好吃</span>
+      <h2>舌尖上的天等</h2>
+      <p>从清晨一碗粉到深夜一把串，再到能带走的那几样。</p>
+    </div>
+    <div class="food-tabs" id="foodTabs"></div>
+    <div class="food-grid" id="foodGrid"></div>
+  </section>
+
+  <!-- ============ 线路规划器 ============ -->
+  <section class="section alt" id="route">
+    <div class="sec-head">
+      <span class="sec-tag">06 / 线路</span>
+      <h2>行程规划器</h2>
+      <p>告诉我你有几天、喜欢什么，我给你排一条线。</p>
+    </div>
+
+    <div class="planner card">
+      <div class="pl-row">
+        <span class="pl-label">出行天数</span>
+        <div class="seg" id="daySeg">
+          <button data-d="1" class="active">1 天</button>
+          <button data-d="2">2 天</button>
+          <button data-d="3">3 天</button>
+        </div>
+      </div>
+      <div class="pl-row">
+        <span class="pl-label">兴趣偏好<i>（可多选）</i></span>
+        <div class="chips" id="interestChips"></div>
+      </div>
+      <div class="pl-row pl-actions">
+        <button class="btn btn-primary" id="btnPlan">生成我的行程</button>
+        <button class="btn btn-text" id="btnPlanReset">重置</button>
+      </div>
+    </div>
+
+    <div id="planOut" class="plan-out"></div>
+  </section>
+
+  <!-- ============ 时节 ============ -->
+  <section class="section" id="calendar">
+    <div class="sec-head">
+      <span class="sec-tag">07 / 时节</span>
+      <h2>什么时候来最好</h2>
+      <p>天等的每个季节都有它自己的理由。</p>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- ============ 攻略 ============ -->
+  <section class="section alt" id="guide">
+    <div class="sec-head">
+      <span class="sec-tag">08 / 攻略</span>
+      <h2>出发前看这一页</h2>
+      <p>交通、住宿与实用贴士，一次说清。</p>
+    </div>
+    <div class="guide-tabs" id="guideTabs"></div>
+    <div class="guide-panel" id="guidePanel"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="f-brand">
+      <b>天等 · 我的家乡</b>
+      <p>广西崇左市天等县文旅导览 · 一个把家乡讲给世界听的小站</p>
+    </div>
+    <div class="f-note">
+      资料来源：天等县人民政府门户网站、崇左市人民政府门户网站、「崇左文旅」公众号、百度百科公开词条
+      （2025—2026 年公开报道整理）。票价、开放时间与活动安排以景区及官方最新公告为准。
+    </div>
+  </div>
+</footer>
+
+<!-- 心愿单抽屉 -->
+<div class="drawer-mask" id="drawerMask"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>我的心愿单 <span id="drawerCount">0</span></h3>
+    <button class="icon-btn" id="drawerClose">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <button class="btn btn-text" id="wishClear">清空</button>
+    <button class="btn btn-primary btn-sm" id="wishClose">完成</button>
+  </div>
+</aside>
+
+<!-- 详情弹窗 -->
+<div class="modal-mask" id="modalMask">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-top">
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-art" id="modalArt"></div>
+    <div class="modal-thumbs-wrap" id="modalThumbsWrap">
+      <div class="modal-thumbs" id="modalThumbs"></div>
+      <button class="lb-open" id="lbOpen">查看完整图片</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost btn-sm" id="modalPrev">← 上一个</button>
+      <button class="btn btn-primary btn-sm" id="modalWish">♥ 加入心愿单</button>
+      <button class="btn btn-ghost btn-sm" id="modalNext">下一个 →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">✕</button>
+  <button class="lb-prev" id="lbPrev">‹</button>
+  <button class="lb-next" id="lbNext">›</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<button class="to-top" id="toTop" title="回到顶部">↑</button>
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
