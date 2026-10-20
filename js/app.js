@@ -768,7 +768,7 @@ function bind() {
 /* 滚动相关：导航态、进度条、高亮、视差、揭示 */
 function scrollFX() {
   const nav = $('#nav'), bar = $('#scrollBar'), top = $('#toTop');
-  const layers = $$('.hero-art .layer');
+  const layers = $$('.hero-photo');
   const links = $$('.nl');
   const secs = ['home', 'spots', 'culture', 'video', 'food', 'route', 'calendar', 'guide'].map(id => document.getElementById(id));
 

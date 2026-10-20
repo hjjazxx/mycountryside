@@ -68,12 +68,19 @@ main,section,footer{position:relative;z-index:1}
 .scroll-progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--indigo),var(--gold));transition:width .1s linear}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.hero-sky{position:absolute;inset:0}
-.hero-art{width:100%;height:100%;object-fit:cover}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#0a2135}
+/* 首屏背景：天等墙绘实拍 */
+.hero-photo{position:absolute;inset:0}
+.hero-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center 40%;
+  animation:heroZoom 16s ease-out forwards;
+}
+@keyframes heroZoom{from{transform:scale(1.07)}to{transform:scale(1)}}
 .hero::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(8,22,38,.55) 0%,rgba(8,22,38,.15) 40%,rgba(8,22,38,.72) 100%);
+  background:
+    linear-gradient(180deg,rgba(8,22,38,.6) 0%,rgba(8,22,38,.3) 45%,rgba(8,22,38,.76) 100%),
+    linear-gradient(90deg,rgba(8,22,38,.42) 0%,rgba(8,22,38,.04) 58%);
 }
 .hero-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:120px 22px 90px;width:100%}
 .hero-kicker{
